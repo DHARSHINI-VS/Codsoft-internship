@@ -436,3 +436,47 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "id": "5832ca19",
+   "metadata": {},
+   "source": [
+    "## Now to get to known about top genre which mostly people watched"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "229b5ba6",
+   "metadata": {},
+   "outputs": [
+{
+"data": [
+"image/png": 
+"text/plain": [
+       "<Figure size 2000x800 with 1 Axes>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "plt.figure(figsize=(20,8))\n",
+    "sns.countplot(y=train_data['GENRE'], order = train_data['GENRE'].value_counts().index)\n",
+    "plt.title('Number of Movies per Genre')\n",
+    "plt.xlabel('Number of Movies')\n",
+    "plt.ylabel('Genre')\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f9bc056f",
+   "metadata": {},
+   "source": [
+    "## Bar Representation of Genre vs Description length"
+   ]
+  },
+  {
+   
+
